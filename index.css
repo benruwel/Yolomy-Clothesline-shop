@@ -1,0 +1,17 @@
+.container-fluid{
+    background-image: url(assets/backgrounds/hero.jpg);
+    background-color: #cccccc;
+    background-size: contain;
+    height: 1500px;
+    width: 790px;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    position: relative;
+    color: white;
+    padding: 10px;
+}
+.hero-text{
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
