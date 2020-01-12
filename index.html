@@ -1,32 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700&display=swap" rel="stylesheet">    <script src="jquery-3.4.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Yolomy</title>
 </head>
 <body>
+<!--Hero image-->
     <div class="container-fluid" id="hero">
         <div class="row">
            <div class="col-md-9">
-               <img src="assets\logo\logo.png" alt="Yolomy Logo" width="200">
+               <img src="assets\logo\logo.png" alt="Yolomy Logo" width="200px">
             </div>
-           <div class="col-md-1" style="font-size: 20px;">Home</div>
-           <div class="col-md-1" style="font-size: 20px;">Products</div>
-           <div class="col-md-1"><img src="assets\logo\shop.png" alt="Shopping cart logo" style="background-repeat: no-repeat;"></div>
+           <div class="col-md-1" >Home</div>
+           <div class="col-md-1" >Products</div>
+           <div class="col-md-1"><img src="assets\logo\shop.png" alt="Shopping cart logo"></div>
            </div>
            <div class="hero-text">
                <p1 style="font-size: 55px;">Our clothing, your comfort</p1></br></br>
-               <p2 style="font-size: 20px;">We understand that you need to look good and feel great.</br>It all starts with what you are wearing.</p2>
+               <p2>We understand that you need to look good and feel great.</br>It all starts with what you are wearing.</p2>
+            <div class="scroll-down"><img src="mouseclick2.png" alt="Scroll down"></div>
            </div>
     </div>
-    <div id="products">
-        Go home
+    
+<!--Products banner-->
+    <div class="products">
+        <div class="row">
+            <div class="col-md-5">
+            <form>
+            <input type="checkbox"><span>MEN</span> &NonBreakingSpace;
+            <input type="checkbox"><span>WOMEN</span> &NonBreakingSpace;
+            <input type="checkbox">CHILDREN &NonBreakingSpace;
+            </form></div>
+            
+            <div class="col-md-7"><input type="button" value="SEE ALL PRODUCTS"></div>
+        </div>
     </div>
+<!--Product display-->
+    <div class="container" id="product-listings">
+        <h6 class="horizontal-line">MEN &nbsp;</h6>
+<!--Men listings-->
+        <div class="row2">
+            <div class="column2">
+                <img src="assets\products\tshirt.png" alt="men t-shirt">
+                <div class="top-left">SIZE</div>
+            </div>
+            <div class="column2">
+                <img src="assets\products\pants.png" alt="mens' pants">
+                <div class="top-left">SIZE</div>
+            </div>
+            <div class="column2">
+                <img src="assets\products\backpack.png" alt="backpack">
+                <div class="top-left">SIZE</div>
+            </div>
+        </div>
+<!--Women Listings-->
+        <h6 class="horizontal-line1">&nbsp; WOMEN</h6>
+        <div class="row2">
+            <div class="column2">
+                <img src="assets\products\giacket.png" alt="Womens' Jacket">
+                <div class="top-left">SIZE</div>
+            </div>
+            <div class="column2">
+                <img src="assets\products\trekkingshoes.png" alt="Trekking shoes">
+                <div class="top-left">SIZE</div>
+            </div>
+            <div class="column2">
+                <img src="assets\products\tshirt_ladies.png" alt="Womens' t-shirt">
+                <div class="top-left">SIZE</div>
+            </div>
+        </div>
+    </div>
+
+<!--'About-Us' info-->
+    <div class="aboutus">
+        <div class="aboutus-text">
+            <p>ABOUT US</p>
+            <p style="font-size: 20px;">This where high-fashion clothing is<br> designed and crafted form
+            the heart by<br>an amazing team of craftsmen and<br>designers who understand what fashion<br>is.</p>
+        </div>
+    </div>
+
 </body>
 </html>
