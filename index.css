@@ -1,4 +1,4 @@
-.container-fluid{
+div#hero{
     background-image: url(assets/backgrounds/hero.jpg);
     background-color: #cccccc;
     background-size: cover;
@@ -49,8 +49,10 @@ h6.horizontal-line::after {
     border-bottom: 2px solid rgb(139, 135, 135); 
     margin: auto;
     }
-#product-listings{
+#product-listings, .bottom-left, .top-left, .aboutus, .bottom-right, p.alert-text, 
+div#footer-text, .footer-note{
     font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
 }
 .row2{
     display: flex;
@@ -59,6 +61,9 @@ h6.horizontal-line::after {
 }
 .column2{
     flex: 33.33%;
+    height: 350px;
+    width: 350px;
+    box-sizing: border-box;
     padding: 70px;
     padding-top: 0px;
     margin: 30px;
@@ -68,12 +73,29 @@ h6.horizontal-line::after {
 div.column2>img{
     padding-top: 50px;
     padding-bottom: 50px;
+    height: 280px;
 }
 .top-left{
     position: absolute;
     top: 40px;
-    left: 40px;
+    margin-left:-60px;
     font-size: 12px;
+}
+.bottom-left{
+    position: absolute;
+    margin-left:-60px;
+    font-size: 12px;
+    bottom: 40px;
+    font-weight: bolder;
+    color: #96907c;
+}
+.bottom-right{
+    position: relative;
+    text-align: right;
+    margin-right: -60px;
+    bottom: -40px;
+    font-weight: bolder;
+    
 }
 h6.horizontal-line1{
     display: flex; 
@@ -97,12 +119,51 @@ h6.horizontal-line1::before {
     background-origin: border-box;
     position: relative;
     color: white;
-
-    font-family: 'Comfortaa', cursive;
+    
 }
 .aboutus-text{
     text-align: center;
     position: relative;
-    top: 50px;
-    padding-top: 50px ;
+    padding-top: 100px;
+    box-sizing: border-box;
+    margin-right: 0px;
+}
+.material-icons{
+    text-align: center;
+}
+p.bordered-text{
+    border-style: solid;
+    padding: 20px;
+    margin: 0px;
+}
+p.alert-text{
+    color: black;
+    background-color: #535154;
+    color: white;
+    padding: 10px;
+    padding-left: 50px;
+    position: relative;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    font-size: 15px;
+}
+div#footer{
+    background-color: #414141;
+    color: white;
+    
+}
+div#footer-text{
+    font-size: 15px;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0px;
+}
+.footer-note{
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+
+}
+.fnote{
+    margin: 0px;
 }
