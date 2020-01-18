@@ -24,6 +24,7 @@ div#hero{
 }
 .scroll-down:hover, .links:hover, input[type=button]:hover{
     opacity: .7;
+    cursor: pointer;
 }
 .products{
     font-family: 'Comfortaa', cursive;
@@ -47,6 +48,7 @@ input[type=button]{
 }
 input[type=checkbox]{
     border: #a99b76;
+    cursor: pointer;
 }
 h6.horizontal-line{
     display: flex; 
