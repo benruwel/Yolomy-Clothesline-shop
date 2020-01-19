@@ -1,6 +1,6 @@
 body, html{
-    margin: 0px;
-    padding: 0px;
+    margin: 0 0;
+    padding: 0 0;
 }
 div#hero{
     background-image: url(assets/backgrounds/hero.jpg);
@@ -12,15 +12,36 @@ div#hero{
     color: white;
     padding: 10px;
 }
+div.top-banner{
+    position: relative;
+}
 .hero-text{
     text-align: center;
     position: relative;
     top: 200px;
 }
+div.col-md-1.links, div.col-md-9{
+    padding: 0 0;
+}
+div.top-banner{
+    position: relative;
+    margin: 0 0;
+}
+div.col-md-1{
+    max-width: 110px;
+    text-align: center;
+}
 .scroll-down{
     margin-top: 320px;
-    position: absolute;
-    left: 610px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width:800px){
+    .scroll-down{
+        position: relative;
+        margin-top: 100px;
+    }
 }
 .scroll-down:hover, .links:hover, input[type=button]:hover{
     opacity: .7;
@@ -32,7 +53,6 @@ div#hero{
     padding: 20px;
     position: relative;
     font-size: 15px;
-    
 }
 p2, .col-md-1{
     font-size: 20px;
@@ -68,31 +88,38 @@ div#footer-text, .footer-note, .selection{
     font-family: 'Comfortaa', cursive;
     font-weight: bolder;
 }
-.row2{
+div#women.row{
     display: flex;
     position: relative;
-    
+    text-align: center;
 }
-.column2{
-    flex: 33.33%;
-    height: 350px;
-    width: 350px;
+div.listing{
+    position: relative;
+    margin: 20px;
+    max-height: 300px;
+    max-width: 300px;
     box-sizing: border-box;
-    padding: 70px;
+    padding: 0 0 0 0;
     padding-top: 0px;
-    margin: 30px;
     padding-bottom: 10px;
     background-color: rgb(236, 236, 236);
 }
-div.column2>img{
+div#men.row{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+
+}
+div.listing>img{
     padding-top: 50px;
     padding-bottom: 50px;
     height: 280px;
 }
 .top-right1{
     position: absolute;
-    top:40px;
-    margin-left: 160px;
+    top:25px;
+    margin-left: 220px;
     width: 15px;
     height: 15px;
     border-radius: 25px;
@@ -100,8 +127,8 @@ div.column2>img{
 }
 .top-right2{
     position: absolute;
-    top:40px;
-    margin-left: 180px;
+    top:25px;
+    margin-left: 240px;
     width: 15px;
     height: 15px;
     border-radius: 25px;
@@ -109,8 +136,8 @@ div.column2>img{
 }
 .top-right3{
     position: absolute;
-    top:40px;
-    margin-left: 200px;
+    top:25px;
+    margin-left: 260px;
     width: 15px;
     height: 15px;
     border-radius: 25px;
@@ -118,8 +145,8 @@ div.column2>img{
 }
 .top-right4{
     position: absolute;
-    top:40px;
-    margin-left: 150px;
+    top:25px;
+    margin-left: 240px;
     width: 15px;
     height: 15px;
     border-radius: 25px;
@@ -127,32 +154,43 @@ div.column2>img{
 }
 .top-right5{
     position: absolute;
-    top:40px;
-    margin-left: 170px;
+    top:25px;
+    margin-left: 260px;
     width: 15px;
     height: 15px;
     border-radius: 25px;
     background-color: whitesmoke;
 }
+@media (max-width:991px) and (min-width:767px){
+    .top-right1{
+        margin-left: 170px;
+    }
+    .top-right2, .top-right4{
+        margin-left: 190px;
+    }
+    .top-right3, .top-right5{
+        margin-left: 210px;
+    }
+}
 .top-left{
     position: absolute;
-    top: 40px;
-    margin-left:-60px;
+    top: 25px;
+    margin-left:5px;
     font-size: 12px;
 }
 .bottom-left{
     position: absolute;
-    margin-left:-60px;
+    margin-left:5px;
     font-size: 12px;
-    bottom: 40px;
+    bottom: 25px;
     font-weight: bolder;
     color: #96907c;
 }
 .bottom-right{
-    position: relative;
-    text-align: right;
-    margin-right: -60px;
-    bottom: -40px;
+    position: absolute;
+    right: 0px;
+    margin-right: 5px;
+    bottom: 25px;
     font-weight: bolder;
     
 }
@@ -178,15 +216,34 @@ h6.horizontal-line1::before {
     background-origin: border-box;
     position: relative;
     color: white;
-    
 }
-.aboutus-text{
+fieldset.aboutus-text{
     text-align: center;
     position: relative;
-    padding-top: 100px;
-    box-sizing: border-box;
-    margin-right: 0px;
+    top: 100px;
+    border: solid;
+    border-color: #908361;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
+fieldset>legend{
+    text-align:center;
+    display: block;
+    width: 150px;
+    margin: 0 0 0 0;
+}
+@media screen and (max-width:800px){
+    fieldset.aboutus-text{
+        position: relative;
+        max-width: 350px;
+        top: 10px;
+    }
+    .aboutus, div#hero{
+        background-position: center;
+    }
+}
+
 .material-icons{
     text-align: center;
 }
@@ -226,15 +283,17 @@ div#footer-text{
 .fnote{
     margin: 0px;
 }
-.column2:hover{
+.listing:hover{
     opacity: .7;
     border: #a99b76;
     border-style: solid;
     border-radius: 5px;
     border-width: 4px;
-    
 }
 .selection{
     border: none;
     background: none;
+}
+p.links{
+    overflow: auto;
 }
